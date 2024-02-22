@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src ="{% static 'js/bootstrap.min.js' %}"></script>
+    <style>
+        legend{
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<a href="{% url 'about' %}" class="btn btn-primary">Form</a>
+<a href="{% url 'home' %}" class="btn btn-secondary">Home</a>
+<form action="" class="bg-success ms-5 p-5">
+    <li class="nav-item"><a href="home.html" class="nav-link btn btn-outline-success"></a></li>
+        <button class="btn btn-success">patient
+            <span class="badge bg-success">4</span>
+ <legend>PATIENT RECORDS</legend>
+   <center> <img src="{% static 'static/images/patient.png' %}" alt=""> </center>  
+ 
+    <div class="form-floating mt-4 mb-3">
+    <input type="text"placeholder=" Enter firstname"class="form-control"id="fname"required="required">
+    <label for="fname">firstname</label>
+        
+
+    
+    <div class="form-floating mt-4 mb-3">
+    <input type="text"placeholder=" Enter lastname"class="form-control"id="lname"required="required">
+    <label for="lname">lastname</label>
+        
+         <div class="form-floating mt-4 mb-3">
+ <input type="text"placeholder=" Enter email"class="form-control"id="email"required="required">
+    <label for="email">Email address</label>
+             
+             
+               <div class="form-floating mt-4 mb-3">
+ <input type="text"placeholder=" Enter password"class="form-control"id="pwd"required="required">
+    <label for="pwd">Passsword</label>
+                   
+</div>
+             <div class="d-grid">
+                 <button class="btn btn-primary">create</button>
+                 
+             </div>
+             </div>
+</form>
+
+</body>
+</html>
